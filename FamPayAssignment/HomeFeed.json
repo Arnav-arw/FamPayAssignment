@@ -1,0 +1,358 @@
+[
+    {
+        "id": 1,
+        "slug": "famx-paypage",
+        "title": null,
+        "formatted_title": null,
+        "description": null,
+        "formatted_description": null,
+        "assets": null,
+        "hc_groups": [
+            {
+                "id": 76,
+                "name": "cardwithaction",
+                "design_type": "HC3",
+                "card_type": 1,
+                "cards": [
+                    {
+                        "id": 2,
+                        "name": "Test hcc",
+                        "slug": "Testhccwithaction",
+                        "title": "Big display card\nwith action\nThis is a sample text for the subtitle that you can add to contextual cards",
+                        "formatted_title": {
+                            "text": "{}\nwith action\n{}",
+                            "align": "left",
+                            "entities": [
+                                {
+                                    "text": "Big display card",
+                                    "type": "generic_text",
+                                    "color": "#FBAF03",
+                                    "font_size": 30,
+                                    "font_style": "underline",
+                                    "font_family": "met_semi_bold"
+                                },
+                                {
+                                    "text": "This is a sample text for the subtitle that you can add to contextual cards",
+                                    "type": "generic_text",
+                                    "color": "#ffffff",
+                                    "font_size": 16,
+                                    "font_style": "underline",
+                                    "font_family": "met_regular"
+                                }
+                            ]
+                        },
+                        "positional_images": [],
+                        "components": [],
+                        "url": "fp://fampay.in/pay/",
+                        "bg_image": {
+                            "image_type": "ext",
+                            "image_url": "https://westeros.r2.famapp.xyz/media/images/generic/ea55b045400042b1955a9a20201ffacb.png",
+                            "webp_image_url": "https://westeros.r2.famapp.xyz/media/images/generic/ea55b045400042b1955a9a20201ffacb.png.webp",
+                            "aspect_ratio": 0.9142857
+                        },
+                        "cta": [
+                            {
+                                "text": "Action",
+                                "type": "normal",
+                                "bg_color": "#000000",
+                                "is_circular": false,
+                                "is_secondary": false,
+                                "stroke_width": 0
+                            }
+                        ],
+                        "is_disabled": false,
+                        "is_shareable": false,
+                        "is_internal": false
+                    }
+                ],
+                "is_scrollable": false,
+                "height": 600,
+                "is_full_width": false,
+                "slug": "Cardwithaction",
+                "level": 0
+            },
+            {
+                "id": 77,
+                "name": "hc6Small",
+                "design_type": "HC6",
+                "card_type": 1,
+                "cards": [
+                    {
+                        "id": 3,
+                        "name": "smallCardWithArrow",
+                        "slug": "smallCardWithArrow",
+                        "title": " ",
+                        "formatted_title": {
+                            "text": " ",
+                            "align": "left",
+                            "entities": [
+                                {
+                                    "text": "Small card with an arrow ",
+                                    "type": "generic_text",
+                                    "color": "#000000",
+                                    "font_style": "underline",
+                                    "font_family": "met_semi_bold"
+                                }
+                            ]
+                        },
+                        "icon": {
+                            "image_type": "ext",
+                            "image_url": "https://westeros.r2.famapp.xyz/media/images/generic/7d566650409c4a289957b030c3fee111.png",
+                            "webp_image_url": "https://westeros.r2.famapp.xyz/media/images/generic/7d566650409c4a289957b030c3fee111.png.webp",
+                            "aspect_ratio": 1
+                        },
+                        "positional_images": [],
+                        "components": [],
+                        "url": "fp://fampay.in/pay/",
+                        "bg_color": "#FBAF03",
+                        "icon_size": 16,
+                        "is_disabled": false,
+                        "is_shareable": false,
+                        "is_internal": false
+                    },
+                    {
+                        "id": 3,
+                        "name": "smallCardWithArrow",
+                        "slug": "smallCardWithArrow",
+                        "title": " ",
+                        "formatted_title": {
+                            "text": " ",
+                            "align": "left",
+                            "entities": [
+                                {
+                                    "text": "Small card with an arrow ",
+                                    "type": "generic_text",
+                                    "color": "#000000",
+                                    "font_style": "underline",
+                                    "font_family": "met_semi_bold"
+                                }
+                            ]
+                        },
+                        "icon": {
+                            "image_type": "ext",
+                            "image_url": "https://westeros.r2.famapp.xyz/media/images/generic/7d566650409c4a289957b030c3fee111.png",
+                            "webp_image_url": "https://westeros.r2.famapp.xyz/media/images/generic/7d566650409c4a289957b030c3fee111.png.webp",
+                            "aspect_ratio": 1
+                        },
+                        "positional_images": [],
+                        "components": [],
+                        "url": "fp://fampay.in/pay/",
+                        "bg_color": "#FBAF03",
+                        "icon_size": 16,
+                        "is_disabled": false,
+                        "is_shareable": false,
+                        "is_internal": false
+                    }
+                ],
+                "is_scrollable": true,
+                "height": 32,
+                "is_full_width": true,
+                "level": 1
+            },
+            {
+                "id": 78,
+                "name": "hc5Images",
+                "design_type": "HC5",
+                "card_type": 1,
+                "cards": [
+                    {
+                        "id": 4,
+                        "name": "stsMonkey",
+                        "slug": "stsMonkey",
+                        "title": "\n",
+                        "formatted_title": {
+                            "text": "{}\n",
+                            "align": "center",
+                            "entities": [
+                                {
+                                    "type": "generic_text",
+                                    "font_style": "underline",
+                                    "font_family": "met_regular"
+                                }
+                            ]
+                        },
+                        "positional_images": [],
+                        "components": [],
+                        "bg_image": {
+                            "image_type": "ext",
+                            "image_url": "https://westeros.r2.famapp.xyz/media/images/generic/2ca4b603ed124e24b9a554c42be2b607.png",
+                            "webp_image_url": "https://westeros.r2.famapp.xyz/media/images/generic/2ca4b603ed124e24b9a554c42be2b607.png.webp",
+                            "aspect_ratio": 2.406015
+                        },
+                        "is_disabled": false,
+                        "is_shareable": false,
+                        "is_internal": false
+                    }
+                ],
+                "is_scrollable": false,
+                "is_full_width": true,
+                "slug": "hc5Images",
+                "level": 2
+            },
+            {
+                "id": 79,
+                "name": "hc9GradientHCG",
+                "design_type": "HC9",
+                "card_type": 1,
+                "cards": [
+                    {
+                        "id": 5,
+                        "name": "yellowGradient",
+                        "slug": "yellow_gradient",
+                        "positional_images": [],
+                        "components": [],
+                        "bg_image": {
+                            "image_type": "ext",
+                            "image_url": "https://westeros.r2.famapp.xyz/media/images/generic/a2fef9ff3622456688bc58b521a7c1bd.png",
+                            "aspect_ratio": 0.6304348
+                        },
+                        "bg_gradient": {
+                            "angle": 336,
+                            "colors": [
+                                "#FBAF03",
+                                "#FFD428"
+                            ]
+                        },
+                        "is_disabled": false,
+                        "is_shareable": false,
+                        "is_internal": false
+                    },
+                    {
+                        "id": 6,
+                        "name": "dayLightGradient",
+                        "slug": "dayLightGradient",
+                        "positional_images": [],
+                        "components": [],
+                        "bg_gradient": {
+                            "angle": 336,
+                            "colors": [
+                                "#FF8749",
+                                "#454AA6"
+                            ]
+                        },
+                        "is_disabled": false,
+                        "is_shareable": false,
+                        "is_internal": false
+                    },
+                    {
+                        "id": 7,
+                        "name": "greenGradient",
+                        "slug": "green-gradient",
+                        "positional_images": [],
+                        "components": [],
+                        "bg_image": {
+                            "image_type": "ext",
+                            "image_url": "https://westeros.r2.famapp.xyz/media/images/generic/1348cf96065147008623b95dfacaf1fa.png",
+                            "aspect_ratio": 0.5662921
+                        },
+                        "bg_gradient": {
+                            "angle": 336,
+                            "colors": [
+                                "#00000",
+                                "#28FFA5"
+                            ]
+                        },
+                        "is_disabled": false,
+                        "is_shareable": false,
+                        "is_internal": false
+                    }
+                ],
+                "is_scrollable": true,
+                "height": 195,
+                "is_full_width": false,
+                "slug": "hc9GradientHCG",
+                "level": 3
+            },
+            {
+                "id": 80,
+                "name": "DisplayCards",
+                "design_type": "HC1",
+                "card_type": 1,
+                "cards": [
+                    {
+                        "id": 9,
+                        "name": "aStark",
+                        "slug": "aStark",
+                        "title": " ",
+                        "formatted_title": {
+                            "text": " ",
+                            "align": "left",
+                            "entities": [
+                                {
+                                    "text": "Small display card",
+                                    "type": "generic_text",
+                                    "color": "#000000",
+                                    "font_style": "underline",
+                                    "font_family": "met_semi_bold"
+                                }
+                            ]
+                        },
+                        "description": " ",
+                        "formatted_description": {
+                            "text": " ",
+                            "align": "left",
+                            "entities": [
+                                {
+                                    "text": "Arya Stark",
+                                    "type": "generic_text",
+                                    "color": "#000000",
+                                    "font_style": "underline",
+                                    "font_family": "met_regular"
+                                }
+                            ]
+                        },
+                        "icon": {
+                            "image_type": "ext",
+                            "image_url": "https://westeros.r2.famapp.xyz/media/images/generic/6ab4a85b837240b69a6be61bdff03d69.png",
+                            "webp_image_url": "https://westeros.r2.famapp.xyz/media/images/generic/6ab4a85b837240b69a6be61bdff03d69.png.webp",
+                            "aspect_ratio": 1
+                        },
+                        "positional_images": [],
+                        "components": [],
+                        "bg_color": "#FBAF03",
+                        "is_disabled": false,
+                        "is_shareable": false,
+                        "is_internal": false
+                    },
+                    {
+                        "id": 3,
+                        "name": "smallCardWithArrow",
+                        "slug": "smallCardWithArrow",
+                        "title": " ",
+                        "formatted_title": {
+                            "text": " ",
+                            "align": "left",
+                            "entities": [
+                                {
+                                    "text": "Small card with an arrow ",
+                                    "type": "generic_text",
+                                    "color": "#000000",
+                                    "font_style": "underline",
+                                    "font_family": "met_semi_bold"
+                                }
+                            ]
+                        },
+                        "icon": {
+                            "image_type": "ext",
+                            "image_url": "https://westeros.r2.famapp.xyz/media/images/generic/7d566650409c4a289957b030c3fee111.png",
+                            "webp_image_url": "https://westeros.r2.famapp.xyz/media/images/generic/7d566650409c4a289957b030c3fee111.png.webp",
+                            "aspect_ratio": 1
+                        },
+                        "positional_images": [],
+                        "components": [],
+                        "url": "fp://fampay.in/pay/",
+                        "bg_color": "#FBAF03",
+                        "icon_size": 16,
+                        "is_disabled": false,
+                        "is_shareable": false,
+                        "is_internal": false
+                    }
+                ],
+                "is_scrollable": true,
+                "height": 64,
+                "is_full_width": false,
+                "level": 4
+            }
+        ]
+    }
+]
