@@ -16,22 +16,25 @@ struct HomeListView: View {
     
     var body: some View {
         ScrollView(showsIndicators: false) {
-            ForEach(cards, id: \.cardUniqueID) { card in
-                switch (card.design_type) {
-                    case .bigDisplayCard:
-                        HC3CardView(card: card)
-                    case .smallCardWithArrow:
-                        HC6CardView(card: card)
-                    case .imageCard:
-                        HC5CardView(card: card)
-                    case .dynamicWidthCard:
-                        HC9CardView(card: card)
-                    case .smallDisplayCard:
-                        HC1CardView(card: card)
-                    default:
-                        EmptyView()
+            VStack {
+                ForEach(cards, id: \.cardUniqueID) { card in
+                    switch (card.design_type) {
+                        case .bigDisplayCard:
+                            HC3CardView(card: card)
+                        case .smallCardWithArrow:
+                            HC6CardView(card: card)
+                        case .imageCard:
+                            HC5CardView(card: card)
+                        case .dynamicWidthCard:
+                            HC9CardView(card: card)
+                        case .smallDisplayCard:
+                            HC1CardView(card: card)
+                        default:
+                            EmptyView()
+                    }
                 }
             }
+            .padding(.top)
         }
         .background {
             Color("BG-Color")

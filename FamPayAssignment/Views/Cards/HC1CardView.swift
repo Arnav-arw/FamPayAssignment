@@ -31,7 +31,7 @@ struct HC1CardView: View {
             }
         }
         .frame(height: card.height ?? 50)
-        .padding(.top)
+        .padding(.vertical)
         .padding(.leading, card.is_scrollable ? 20 : 0)
     }
     
