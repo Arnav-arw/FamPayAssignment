@@ -31,6 +31,8 @@ struct CardGroupModel: Codable, Identifiable {
     let slug: String?
     let icon_size: Double?
     
+    var cardUniqueID = UUID().uuidString
+    
     enum CodingKeys: String, CodingKey {
         case id
         case name
@@ -166,7 +168,8 @@ struct Formatted_title: Codable {
             let matchCount = regex.matches(in: text, options: [], range: .init(location: 0, length: text.count))
             return matchCount.count == entities.count
         } catch let error {
-            fatalError(error.localizedDescription)
+            print(error.localizedDescription)
+            return false
         }
     }
     

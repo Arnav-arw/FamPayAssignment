@@ -24,14 +24,12 @@ struct HomeView: View {
                         .frame(height: 20)
                     Spacer()
                 }
-                VStack {
-                    if let feed = feedVM.feed {
-                        HomeListView(feed: feed.cards)
-                    } else {
-                        Spacer()
-                        ProgressView()
-                        Spacer()
-                    }
+                if let cards = feedVM.cards {
+                    HomeListView(cards: cards)
+                } else {
+                    Spacer()
+                    ProgressView()
+                    Spacer()
                 }
             }
         }

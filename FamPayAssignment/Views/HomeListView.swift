@@ -9,11 +9,14 @@ import SwiftUI
 
 struct HomeListView: View {
     
-    @State var feed: [CardGroupModel]
+    @State var cards: [CardGroupModel]
+    
+    @State private var isRefreshing = false
+    @StateObject private var feedVM = FeedViewModel.shared
     
     var body: some View {
-        ScrollView(showsIndicators: false) {
-            ForEach(feed) { card in
+        RefreshableScrollView(isRefreshing: $isRefreshing) {
+            ForEach(cards, id: \.cardUniqueID) { card in
                 switch (card.design_type) {
                     case .bigDisplayCard:
                         HC3CardView(card: card)
@@ -25,19 +28,29 @@ struct HomeListView: View {
                         HC9CardView(card: card)
                     case .smallDisplayCard:
                         HC1CardView(card: card)
-                    default: EmptyView()
+                    default: 
+                        EmptyView()
                 }
             }
+        } onRefresh: {
+            feedVM.refreshFeed()
         }
         .background {
             Color("BG-Color")
                 .frame(width: deviceWidth)
                 .ignoresSafeArea(.all)
         }
+        .gesture(
+            DragGesture()
+                .onChanged { value in
+                    if value.translation.height > 50 && !isRefreshing {
+                        isRefreshing = true
+                        feedVM.refreshFeed()
+                    }
+                }
+                .onEnded { _ in
+                    isRefreshing = false
+                }
+        )
     }
 }
-
-#Preview {
-    HomeListView(feed: [])
-}
-

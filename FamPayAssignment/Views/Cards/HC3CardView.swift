@@ -18,7 +18,7 @@ struct HC3CardView: View {
                 ScrollView(.horizontal) {
                     HStack {
                         ForEach(0 ..< cards.count, id: \.self) { index in
-                            BigDisplayContextualSingleCard(cardGroupId: cards[index].id, card: cards[index])
+                            BigDisplayContextualSingleCard(cardGroupId: card.id, card: cards[index])
                                 .frame(width: deviceWidth * 0.9, height: deviceWidth * 0.9 * 1.094)
                         }
                     }
@@ -26,7 +26,7 @@ struct HC3CardView: View {
                     .padding(.leading)
                 }
             } else if let cardData = card.cards?.first {
-                BigDisplayContextualSingleCard(cardGroupId: cardData.id, card: cardData)
+                BigDisplayContextualSingleCard(cardGroupId: card.id, card: cardData)
                     .frame(width: deviceWidth, height: deviceWidth * 1.094)
             } else {
                 EmptyView()
@@ -73,11 +73,13 @@ private struct BigDisplayContextualCardActionView: View {
     let cardGroupId: Int
     let card: CardModel
     
+    @StateObject var viewModel = FeedViewModel.shared
+    
     var body: some View {
         VStack {
             Spacer()
             Button {
-                
+                viewModel.remindLaterCard(for: cardGroupId)
             } label: {
                 VStack {
                     Image("bell")
@@ -94,7 +96,7 @@ private struct BigDisplayContextualCardActionView: View {
             .cornerRadius(12)
             
             Button {
-                
+                viewModel.dismissCard(for: cardGroupId)
             } label: {
                 VStack {
                     Image("clear")
