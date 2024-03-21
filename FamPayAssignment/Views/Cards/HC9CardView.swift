@@ -30,14 +30,13 @@ struct HC9CardView: View {
             }
         }
         .frame(height: card.height ?? 50)
-        .padding(.top)
         .padding(.leading, card.is_scrollable ? 25 : 0)
     }
     
     @ViewBuilder
     func gradientCardView(_ minicard: CardModel?) -> some View {
         if let minicard {
-            LinearGradient(gradient: Gradient(colors: fromHexCodes(minicard.bg_gradient?.colors ?? [])),
+            LinearGradient(gradient: Gradient(colors: Helpers.fromHexCodes(minicard.bg_gradient?.colors ?? [])),
                            startPoint: .bottomTrailing,
                            endPoint: .topLeading)
             .frame(width: card.is_scrollable ? card.height ?? 50 : UIScreen.main.bounds.width - 40)

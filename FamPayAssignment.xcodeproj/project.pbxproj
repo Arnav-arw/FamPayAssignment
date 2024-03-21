@@ -23,7 +23,7 @@
 		6A5BD0872BA9D05F00C38BE2 /* Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A5BD0862BA9D05F00C38BE2 /* Extentions.swift */; };
 		6A5BD0892BA9DBA800C38BE2 /* HC5CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A5BD0882BA9DBA800C38BE2 /* HC5CardView.swift */; };
 		6A5BD08B2BA9DEE900C38BE2 /* HC1CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A5BD08A2BA9DEE900C38BE2 /* HC1CardView.swift */; };
-		6A5BD08E2BA9E71F00C38BE2 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A5BD08D2BA9E71F00C38BE2 /* Constants.swift */; };
+		6A5BD08E2BA9E71F00C38BE2 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A5BD08D2BA9E71F00C38BE2 /* Helpers.swift */; };
 		6A5FBECF2BAA27B800A8033F /* HC9CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A5FBECE2BAA27B800A8033F /* HC9CardView.swift */; };
 /* End PBXBuildFile section */
 
@@ -44,7 +44,7 @@
 		6A5BD0862BA9D05F00C38BE2 /* Extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extentions.swift; sourceTree = "<group>"; };
 		6A5BD0882BA9DBA800C38BE2 /* HC5CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HC5CardView.swift; sourceTree = "<group>"; };
 		6A5BD08A2BA9DEE900C38BE2 /* HC1CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HC1CardView.swift; sourceTree = "<group>"; };
-		6A5BD08D2BA9E71F00C38BE2 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		6A5BD08D2BA9E71F00C38BE2 /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 		6A5FBECE2BAA27B800A8033F /* HC9CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HC9CardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -143,7 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				6A5BD0862BA9D05F00C38BE2 /* Extentions.swift */,
-				6A5BD08D2BA9E71F00C38BE2 /* Constants.swift */,
+				6A5BD08D2BA9E71F00C38BE2 /* Helpers.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -238,7 +238,7 @@
 				6A5BD0892BA9DBA800C38BE2 /* HC5CardView.swift in Sources */,
 				6A44CF162BA96698004D4C50 /* FeedModel.swift in Sources */,
 				6A5BD0872BA9D05F00C38BE2 /* Extentions.swift in Sources */,
-				6A5BD08E2BA9E71F00C38BE2 /* Constants.swift in Sources */,
+				6A5BD08E2BA9E71F00C38BE2 /* Helpers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
