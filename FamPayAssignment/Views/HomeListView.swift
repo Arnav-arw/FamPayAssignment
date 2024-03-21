@@ -44,6 +44,7 @@ struct HomeListView: View {
                 .onChanged { value in
                     if value.translation.height > 50 && !isRefreshing {
                         isRefreshing = true
+                        UIImpactFeedbackGenerator(style: .soft).impactOccurred()
                         feedVM.refreshFeed()
                     }
                 }

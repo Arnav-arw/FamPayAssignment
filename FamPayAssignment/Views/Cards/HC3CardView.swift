@@ -79,6 +79,7 @@ private struct BigDisplayContextualCardActionView: View {
         VStack {
             Spacer()
             Button {
+                UIImpactFeedbackGenerator(style: .medium).impactOccurred()
                 viewModel.remindLaterCard(for: cardGroupId)
             } label: {
                 VStack {
@@ -96,6 +97,7 @@ private struct BigDisplayContextualCardActionView: View {
             .cornerRadius(12)
             
             Button {
+                UIImpactFeedbackGenerator(style: .medium).impactOccurred()
                 viewModel.dismissCard(for: cardGroupId)
             } label: {
                 VStack {
