@@ -173,6 +173,7 @@ struct Formatted_title: Codable {
         }
     }
     
+    // This function exists for the purpose of parsing entities and correlating them with text {}
     func updateEntities() -> [Entities] {
         
         if !isValid() {

@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6A30CCA62BAC63CF00A48B0D /* RefreshableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A30CCA52BAC63CF00A48B0D /* RefreshableView.swift */; };
 		6A44CF042BA962DC004D4C50 /* FamPayAssignmentApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A44CF032BA962DC004D4C50 /* FamPayAssignmentApp.swift */; };
 		6A44CF062BA962DC004D4C50 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A44CF052BA962DC004D4C50 /* HomeView.swift */; };
 		6A44CF082BA962DD004D4C50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A44CF072BA962DD004D4C50 /* Assets.xcassets */; };
@@ -28,7 +27,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		6A30CCA52BAC63CF00A48B0D /* RefreshableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshableView.swift; sourceTree = "<group>"; };
 		6A44CF002BA962DC004D4C50 /* FamPayAssignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FamPayAssignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A44CF032BA962DC004D4C50 /* FamPayAssignmentApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamPayAssignmentApp.swift; sourceTree = "<group>"; };
 		6A44CF052BA962DC004D4C50 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -121,7 +119,6 @@
 			children = (
 				6A44CF052BA962DC004D4C50 /* HomeView.swift */,
 				6A44CF1C2BA972DC004D4C50 /* HomeListView.swift */,
-				6A30CCA52BAC63CF00A48B0D /* RefreshableView.swift */,
 				6A44CF1E2BA97C08004D4C50 /* Cards */,
 			);
 			path = Views;
@@ -229,7 +226,6 @@
 				6A44CF202BA97C26004D4C50 /* HC3CardView.swift in Sources */,
 				6A44CF252BA989C8004D4C50 /* HC6CardView.swift in Sources */,
 				6A5BD08B2BA9DEE900C38BE2 /* HC1CardView.swift in Sources */,
-				6A30CCA62BAC63CF00A48B0D /* RefreshableView.swift in Sources */,
 				6A44CF132BA9645B004D4C50 /* FeedManager.swift in Sources */,
 				6A44CF062BA962DC004D4C50 /* HomeView.swift in Sources */,
 				6A5FBECF2BAA27B800A8033F /* HC9CardView.swift in Sources */,

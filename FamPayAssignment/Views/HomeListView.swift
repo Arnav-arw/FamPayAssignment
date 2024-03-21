@@ -15,7 +15,7 @@ struct HomeListView: View {
     @StateObject private var feedVM = FeedViewModel.shared
     
     var body: some View {
-        RefreshableScrollView(isRefreshing: $isRefreshing) {
+        ScrollView(showsIndicators: false) {
             ForEach(cards, id: \.cardUniqueID) { card in
                 switch (card.design_type) {
                     case .bigDisplayCard:
@@ -28,12 +28,10 @@ struct HomeListView: View {
                         HC9CardView(card: card)
                     case .smallDisplayCard:
                         HC1CardView(card: card)
-                    default: 
+                    default:
                         EmptyView()
                 }
             }
-        } onRefresh: {
-            feedVM.refreshFeed()
         }
         .background {
             Color("BG-Color")
@@ -41,6 +39,7 @@ struct HomeListView: View {
                 .ignoresSafeArea(.all)
         }
         .gesture(
+            // Gesture for reloading feed
             DragGesture()
                 .onChanged { value in
                     if value.translation.height > 50 && !isRefreshing {
